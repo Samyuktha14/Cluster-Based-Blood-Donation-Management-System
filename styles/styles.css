@@ -1,0 +1,233 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.registers{
+    display: flex;
+    position: absolute;
+    width: 90%;
+    height: 30%;
+    top: 80%;
+    left: 50%;
+    transform: translate(-45%, -50%);
+    padding: 10px;
+}
+
+.registers-a{
+    display: flex;
+    position: absolute;
+    width: 90%;
+    height: 20%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-45%, -50%);
+    padding: 10px;
+}
+
+.registers-b{
+    display: flex;
+    position: absolute;
+    width: 90%;
+    height: 20%;
+    top: 80%;
+    left: 50%;
+    margin-top: 30px;
+    transform: translate(-45%, -50%);
+    padding: 10px;
+}
+
+.reg{
+    display: flex;
+    flex-direction: column;
+}
+
+.radio{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.registers-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 20px;
+    margin: 50px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.reg{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.registers-a-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 20px;
+    margin: 50px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.registers-a-items img{
+    width: 40px;
+}
+
+.registers-b-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 20px;
+    margin: 50px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.registers-b-items img{
+    width: 40px;
+}
+
+.registers-items:hover{
+    transform: scale(1.2);
+    background-color: #999;
+}
+
+.registers-items img{
+    width: 80px;
+    margin: 10px;
+}
+
+.anchors{
+    text-decoration: none;
+    color: #000;
+}
+
+.login-register-container{
+    padding: 10px;
+    position: absolute;
+    width: 40%;
+    height: 70%;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    box-shadow: 2px 2px 20px rgb(0, 0, 0);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    transition: 0.2s 0.7s ease-in-out;
+}
+
+.title{
+    font-size: 2.2rem;
+    color: #444;
+}
+
+.login-container{
+    z-index: 1;
+}
+
+.register-container{
+    z-index: 2;
+    /* opacity: 0; */
+}
+
+.login-register-content{
+    width: 350px;
+    margin-top: 20px;
+    background-color: 000;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid #000;
+    line-height: 40px;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.btns{
+    width: 150px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 10px 0;
+    transition: .3s ease-in-out;
+}
+
+.btns:hover{
+    transform: scale(0.9);
+}
+
+.toggles{
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 0;
+    border: 1px solid rgb(0, 0, 0);
+    transition: .3s ease-in-out;
+}
+
+.table-style {
+	border-collapse: collapse;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+.table-style td {
+    align-items: center;
+    width: 150px;
+	padding: 15px;
+}
+.table-style thead td {
+	background-color: #54585d;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 13px;
+	border: 1px solid #54585d;
+}
+.table-style tbody td {
+	color: #636363;
+	border: 1px solid #dddfe1;
+}
+.table-style tbody tr {
+	background-color: #f9fafb;
+}
+.table-style tbody tr:nth-child(odd) {
+	background-color: #ffffff;
+}

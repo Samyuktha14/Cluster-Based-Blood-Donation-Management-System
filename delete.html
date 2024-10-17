@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Cluster Based Blood Donation Management System</title>
+</head>
+<body>
+    <div class="form search-for-blood-container">
+        <h2 class="title">Delete Donor</h2>
+        <div class="delete" style="display: flex;margin-top: 20px;">
+            <input class="login-register-content" type="text" id="deleteDID" placeholder="ID" required>
+        </div>
+        <input class="btns" type="button" value="Delete" onclick="deleteDonor()">
+        <h2 class="title">Delete Patient}</h2>
+        <div class="delete" style="display: flex;margin-top: 20px;">
+            <input class="login-register-content" type="text" id="deletePID" placeholder="ID" required>
+        </div>
+        <input class="btns" type="button" value="Delete" onclick="deletePatient()">
+    </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-database.js"></script>
+<script src="scripts/index.js"></script>
+</html>
